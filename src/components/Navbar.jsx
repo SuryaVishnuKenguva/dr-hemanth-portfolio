@@ -40,7 +40,7 @@ const Navbar = () => {
           </motion.div>
           
           <div className="hidden md:flex space-x-8">
-            {['About', 'Experience', 'Education', 'Vision', 'Contact'].map((item) => (
+            {['About', 'Expertise','Experience', 'Education', 'Vision', 'Contact'].map((item) => (
               <button
                 key={item}
                 onClick={() => scrollToSection(item.toLowerCase())}

@@ -1,7 +1,9 @@
 import About from './components/About'
+import ConsultationCalendar from './components/ConsultationCalender'
 import Contact from './components/Contact'
 import Education from './components/Education'
 import Experience from './components/Experience'
+import Expertise from './components/Expertise'
 import Footer from './components/Footer'
 import Hero from './components/Hero'
 import Navbar from './components/Navbar'
@@ -13,8 +15,10 @@ const App = () => {
       <Navbar />
       <Hero />
       <About />
+      <Expertise />
       <Experience />
       <Education />
+      {/* <ConsultationCalendar /> */}
       <Vision />
       <Contact />
       <Footer />
