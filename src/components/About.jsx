@@ -93,7 +93,7 @@ const About = () => {
                 </div>
                 <div className="space-y-1">
                   <div className="text-4xl font-bold bg-linear-to-r from-slate-900 to-slate-700 bg-clip-text text-transparent">
-                    3
+                    2
                   </div>
                   <div className="text-sm font-semibold text-slate-600 tracking-wide uppercase">
                     Ph.D. Degrees

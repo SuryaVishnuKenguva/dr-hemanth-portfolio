@@ -1,119 +1,10 @@
+import { experiences } from "../data/experienceData";
 import AnimatedSection from "./AnimatedSection";
 // eslint-disable-next-line no-unused-vars
 import { motion } from "motion/react";
 
 const Experience = () => {
-  const experiences = [
-    {
-      position: "Managing Director",
-      company: "One78 SabbPe Technology Solutions India Pvt. Ltd.",
-      duration: "Jul 2023 – Present",
-      location: "Gurugram, Haryana, India",
-      description:
-        "Leading innovation in digital payment ecosystems across offline and online platforms, including PSP modules, UPI Elite QuickPay, and integrated EDC technology solutions.",
-      highlight: true,
-    },
-    {
-      position: "Executive Director & Legal Advisor",
-      company: "Cito Nidhi Limited",
-      duration: "Feb 2023 – Present",
-      location: "Gurugram, Haryana, India (Remote)",
-      description:
-        "Overseeing financial growth and regulatory coordination while building strategic alliances with insurance and lending partners for SME expansion.",
-      highlight: true,
-    },
-    {
-      position: "Startup Mentor",
-      company: "Startup India – MAARG Program",
-      duration: "Aug 2023 – Present",
-      location: "Gurugram, Haryana, India (Remote)",
-      description:
-        "Guiding startups in fintech and allied domains under the MAARG mentorship platform, helping founders with business strategy, scalability, and regulatory readiness.",
-      highlight: true,
-    },
-    {
-      position: "Executive Director",
-      company: "Grats Technologies Pvt. Ltd.",
-      duration: "Oct 2023 – Present",
-      location: "Bengaluru, Karnataka (Remote)",
-      description:
-        "Driving fintech innovation and enterprise partnerships to deliver robust digital payment and merchant solutions for emerging markets.",
-      highlight: true,
-    },
-    {
-      position: "Independent Consultant",
-      company: "Self-Employed",
-      duration: "Jan 2024 – Present",
-      location: "Gurugram, Haryana (Remote)",
-      description:
-        "Providing consulting services to fintech enterprises in both offline and online payments, focusing on strategy, partnerships, and compliance.",
-    },
-    {
-      position: "General Manager",
-      company: "Paytm",
-      duration: "Nov 2020 – Jan 2023",
-      location: "Bengaluru, Karnataka",
-      description:
-        "Built mid-market business operations for South & West India, managing offline integrations, EMI programs, and GMV growth across merchant ecosystems.",
-    },
-    {
-      position: "Regional Head",
-      company: "Innoviti Payment Solutions Pvt. Ltd.",
-      duration: "Feb 2018 – Nov 2020",
-      location: "Bengaluru, Karnataka",
-      description:
-        "Directed sales, operations, and partnerships across South & East India, leading corporate, institutional, and government payment channels.",
-    },
-    {
-      position: "Regional Head",
-      company: "NeoGrowth Credit Pvt. Ltd.",
-      duration: "Sep 2017 – Feb 2018",
-      location: "Chennai, Tamil Nadu",
-      description:
-        "Managed unsecured lending portfolios for SMEs, driving business growth through card receivables and financial performance.",
-    },
-    {
-      position: "Sales Head – Jio Money & Enterprise State Lead",
-      company: "Reliance Jio",
-      duration: "Mar 2016 – Aug 2017",
-      location: "Kolkata, West Bengal",
-      description:
-        "Headed Jio Money’s telecom and non-telecom business across West Bengal and Sikkim, strengthening retail and enterprise payment distribution channels.",
-    },
-    {
-      position: "Regional Head – East Region / Business Manager",
-      company: "Fiserv India",
-      duration: "May 2011 – Mar 2016",
-      location: "Greater Kolkata Area",
-      description:
-        "Led acquiring business for the East region, managing partnerships, channel operations, and client satisfaction for retail and corporate payment solutions.",
-    },
-    {
-      position: "Sales Manager",
-      company: "HDFC Bank Ltd.",
-      duration: "Oct 2010 – May 2011",
-      location: "East Godavari, Andhra Pradesh",
-      description:
-        "Handled dealer networks and alternate channels for two-wheeler financing and retail loan distribution.",
-    },
-    {
-      position: "Wealth Manager / Sales Manager",
-      company: "ICICI Bank",
-      duration: "Jul 2007 – Sep 2010",
-      location: "Vijayawada, Andhra Pradesh",
-      description:
-        "Managed HNI client portfolios, financial planning, and distribution of wealth management products, including equity, mutual funds, and insurance.",
-    },
-    {
-      position: "Sr. Sales Executive – North Region",
-      company: "Axiom Energy Conversion Ltd.",
-      duration: "Nov 2006 – Jul 2007",
-      location: "Delhi, India",
-      description:
-        "Handled channel sales and OEM partnerships across North India, strengthening B2B relationships in the energy sector.",
-    },
-  ];
-
+  
   return (
     <AnimatedSection id="experience">
       <section className="relative py-32 overflow-hidden">
@@ -156,15 +47,14 @@ const Experience = () => {
               transition={{ delay: 0.2 }}
               className="text-lg text-slate-600 font-light max-w-2xl mx-auto"
             >
-              A legacy of leadership across fintech, payments, and banking
-              innovation
+              A legacy of leadership across fintech, payments, and banking innovation
             </motion.p>
           </div>
 
           {/* Timeline Container */}
-          <div className="relative max-w-5xl mx-auto">
+          <div className="relative max-w-6xl mx-auto">
             {/* Premium Timeline Line */}
-            <div className="absolute left-0 md:left-12 top-0 bottom-0 w-px bg-linear-to-b from-transparent via-slate-300 to-transparent hidden md:block"></div>
+            <div className="absolute left-0 md:left-20 top-0 bottom-0 w-px bg-linear-to-b from-transparent via-slate-300 to-transparent hidden md:block"></div>
 
             {/* Experience Cards */}
             <div className="space-y-12">
@@ -177,27 +67,76 @@ const Experience = () => {
                   transition={{ delay: index * 0.08, duration: 0.6 }}
                   className="relative"
                 >
-                  {/* Timeline Dot */}
-                  <div className="absolute left-0 md:left-12 top-8 -ml-[9px] w-5 h-5 rounded-full bg-white border-4 border-slate-900 shadow-lg hidden md:block z-10">
-                    {exp.highlight && (
-                      <div className="absolute inset-0 rounded-full bg-slate-900 animate-ping opacity-20"></div>
-                    )}
+                  {/* Timeline Dot with Logo */}
+                  <div className="absolute left-0 md:left-20 top-8 -ml-[52px] hidden md:block z-10">
+                    <div className="relative w-24 h-24">
+                      {/* Outer Ring */}
+                      <div className="absolute inset-0 rounded-full border-4 border-white shadow-xl bg-white">
+                        {/* Logo Container */}
+                        <div className="w-full h-full rounded-full overflow-hidden bg-white flex items-center justify-center p-2">
+                          <img
+                            src={exp.logo}
+                            alt={`${exp.company} logo`}
+                            className="w-full h-full object-contain"
+                            onError={(e) => {
+                              // Fallback to gradient with initials if logo fails to load
+                              e.target.style.display = 'none';
+                              e.target.nextSibling.style.display = 'flex';
+                            }}
+                          />
+                          {/* Fallback Initials */}
+                          <div 
+                            className="w-full h-full rounded-full bg-linear-to-br from-slate-700 to-slate-900 items-center justify-center text-white font-bold text-lg hidden"
+                            style={{ display: 'none' }}
+                          >
+                            {exp.company.split(' ').slice(0, 2).map(word => word[0]).join('')}
+                          </div>
+                        </div>
+                      </div>
+
+                      {/* Glow Effect */}
+                      <div className="absolute inset-0 rounded-full bg-slate-900/5 blur-xl scale-110"></div>
+                    </div>
                   </div>
 
                   {/* Content Card */}
-                  <div className="md:ml-28">
+                  <div className="md:ml-36">
                     <motion.div
                       whileHover={{ scale: 1.01, y: -4 }}
                       transition={{ duration: 0.3 }}
-                      className={`relative p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 border ${
+                      className={`relative p-8 lg:p-10 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 border ${
                         exp.highlight
                           ? "bg-linear-to-br from-slate-50 via-white to-blue-50/30 border-slate-200/80"
                           : "bg-linear-to-br from-white to-slate-50/50 border-slate-200/50"
                       }`}
                     >
+                      {/* Mobile Logo (shown on small screens) */}
+                      <div className="md:hidden mb-6 flex items-start gap-4">
+                        <div className="relative w-16 h-16 shrink-0">
+                          <div className="w-full h-full rounded-full border-4 border-white shadow-lg bg-white overflow-hidden flex items-center justify-center p-1.5">
+                            <img
+                              src={exp.logo}
+                              alt={`${exp.company} logo`}
+                              className="w-full h-full object-cover"
+                              onError={(e) => {
+                                e.target.style.display = 'none';
+                                e.target.nextSibling.style.display = 'flex';
+                              }}
+                            />
+                            <div 
+                              className="w-full h-full rounded-full bg-linear-to-br from-slate-700 to-slate-900 items-center justify-center text-white font-bold text-sm hidden"
+                              style={{ display: 'none' }}
+                            >
+                              {exp.company.split(' ').slice(0, 2).map(word => word[0]).join('')}
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
                       {/* Current Badge for Active Roles */}
                       {exp.highlight && (
-                        <div className="absolute -top-3 -right-3 px-4 py-1.5 bg-linear-to-r from-emerald-500 to-emerald-600 text-white text-xs font-bold rounded-full shadow-lg">
+                        <div className="absolute -top-3 -right-3 px-4 py-1.5 bg-linear-to-r from-emerald-500 to-emerald-600 text-white text-xs font-bold rounded-full shadow-lg flex items-center gap-1.5">
+                          <div className="w-2 h-2 bg-white rounded-full animate-pulse"></div>
                           CURRENT
                         </div>
                       )}
