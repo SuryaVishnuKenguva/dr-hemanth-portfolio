@@ -1,7 +1,7 @@
 import AnimatedSection from "./AnimatedSection";
 import { motion } from "motion/react";
 import { FiLinkedin, FiArrowRight } from "react-icons/fi";
-import { FaFacebook, FaInstagram } from "react-icons/fa";
+import { FaFacebook, FaInstagram, FaXTwitter } from "react-icons/fa6";
 
 const Contact = () => {
   const socialLinks = [
@@ -11,6 +11,11 @@ const Contact = () => {
       link: "https://www.linkedin.com/in/dr-hemanth-veeramalla/"
     },
     {
+      icon: FaXTwitter,
+      label: "X (Twitter)",
+      link: "https://x.com/Veeramalla48733?t=GsFkgCQLRaY6PG5nzFT58A&s=09"
+    },
+    {
       icon: FaInstagram,
       label: "Instagram",
       link: "https://instagram.com"
@@ -18,7 +23,7 @@ const Contact = () => {
     {
       icon: FaFacebook,
       label: "Facebook",
-      link: "https://facebook.com"
+      link: "https://www.facebook.com/share/1GHH3PjnMZ/"
     }
   ];
 

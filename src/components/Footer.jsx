@@ -1,6 +1,6 @@
 import { motion } from "motion/react";
 import { FiLinkedin, FiMail, FiCalendar } from "react-icons/fi";
-import { FaInstagram } from "react-icons/fa";
+import { FaInstagram, FaXTwitter, FaFacebook } from "react-icons/fa6";
 
 const Footer = () => {
   const scrollToSection = (id) => {
@@ -25,9 +25,21 @@ const Footer = () => {
       external: true
     },
     {
+      label: "X (Twitter)",
+      icon: FaXTwitter,
+      link: "https://x.com/Veeramalla48733?t=GsFkgCQLRaY6PG5nzFT58A&s=09",
+      external: true
+    },
+    {
       label: "Instagram",
       icon: FaInstagram,
       link: "https://instagram.com",
+      external: true
+    },
+    {
+      label: "Facebook",
+      icon: FaFacebook,
+      link: "https://www.facebook.com/share/1GHH3PjnMZ/",
       external: true
     },
     {
