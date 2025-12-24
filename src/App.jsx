@@ -1,5 +1,5 @@
 import About from './components/About'
-import ConsultationCalendar from './components/ConsultationCalender'
+import ConsultationCalendar from './components/ConsultationCalendar'
 import Contact from './components/Contact'
 import Education from './components/Education'
 import Experience from './components/Experience'
@@ -18,7 +18,7 @@ const App = () => {
       <Expertise />
       <Experience />
       <Education />
-      {/* <ConsultationCalendar /> */}
+      <ConsultationCalendar />
       <Vision />
       <Contact />
       <Footer />

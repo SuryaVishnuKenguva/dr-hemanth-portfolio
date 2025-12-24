@@ -1,159 +1,74 @@
 import AnimatedSection from "./AnimatedSection";
-// eslint-disable-next-line no-unused-vars
 import { motion } from "motion/react";
 
 const Vision = () => {
+  const values = [
+    {
+      title: "Innovation",
+      desc: "Pioneering next-generation payment solutions that redefine digital commerce"
+    },
+    {
+      title: "Security",
+      desc: "Uncompromising data protection and compliance across all platforms"
+    },
+    {
+      title: "Inclusion",
+      desc: "Democratizing financial access for businesses and consumers globally"
+    }
+  ];
+
   return (
     <AnimatedSection id="vision">
-      <section className="relative py-32 overflow-hidden">
-        {/* Premium Dark Gradient Background */}
-        <div className="absolute inset-0 bg-linear-to-br from-slate-900 via-slate-800 to-slate-900"></div>
-        
-        {/* Sophisticated Pattern Overlay */}
-        <div className="absolute inset-0 opacity-5"
-             style={{
-               backgroundImage: `radial-gradient(circle at 1px 1px, white 1px, transparent 0)`,
-               backgroundSize: '40px 40px'
-             }}>
-        </div>
+      <section className="py-24 lg:py-32 bg-gradient-to-br from-[#0F2A44] to-[#0a1f33]">
+        <div className="max-w-7xl mx-auto px-8 lg:px-16">
 
-        {/* Floating Gradient Orbs - More Pronounced */}
-        <div className="absolute top-1/4 left-0 w-[500px] h-[500px] bg-blue-500/20 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-1/4 right-0 w-[500px] h-[500px] bg-slate-500/20 rounded-full blur-3xl"></div>
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] bg-blue-400/10 rounded-full blur-3xl"></div>
-
-        {/* Decorative Grid Lines */}
-        <div className="absolute inset-0 opacity-5">
-          <div className="absolute inset-0"
-               style={{
-                 backgroundImage: `linear-gradient(to right, white 1px, transparent 1px),
-                                  linear-gradient(to bottom, white 1px, transparent 1px)`,
-                 backgroundSize: '100px 100px'
-               }}>
-          </div>
-        </div>
-
-        <div className="relative max-w-6xl mx-auto px-6 lg:px-8 text-center">
           <motion.div
-            initial={{ opacity: 0, y: 40 }}
+            initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
-            className="space-y-12"
+            transition={{ duration: 0.6 }}
+            className="text-center mb-16"
           >
-            {/* Premium Header Section */}
-            <div className="space-y-6">
-              {/* Decorative Line */}
-              <motion.div
-                initial={{ width: 0 }}
-                whileInView={{ width: "6rem" }}
-                viewport={{ once: true }}
-                transition={{ delay: 0.3, duration: 0.8 }}
-                className="h-1 bg-linear-to-r from-transparent via-white to-transparent rounded-full mx-auto"
-              ></motion.div>
+            <div className="inline-block px-4 py-1.5 bg-white/10 text-white text-sm font-semibold rounded-full mb-6">
+              Vision
+            </div>
+            <h2 className="text-4xl lg:text-5xl xl:text-6xl font-bold text-white max-w-5xl mx-auto leading-tight">
+              Empowering the Future of Digital Payments
+            </h2>
+          </motion.div>
 
-              {/* Main Heading */}
-              <motion.h2
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+            className="max-w-4xl mx-auto mb-16"
+          >
+            <p className="text-xl lg:text-2xl text-white/90 leading-relaxed text-center">
+              Building secure, inclusive, and intelligent technology that transforms how
+              businesses and consumers interact in the digital economy.
+            </p>
+          </motion.div>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            {values.map((value, index) => (
+              <motion.div
+                key={index}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ delay: 0.2 }}
-                className="text-5xl lg:text-7xl font-bold leading-tight"
+                transition={{ duration: 0.6, delay: 0.3 + index * 0.1 }}
+                className="bg-white/5 backdrop-blur-sm rounded-2xl p-8 border border-white/10 hover:bg-white/10 transition-all"
               >
-                <span className="bg-linear-to-r from-white via-slate-100 to-white bg-clip-text text-transparent">
-                  Vision & Leadership
-                </span>
-                <br />
-                <span className="bg-linear-to-r from-blue-300 via-slate-200 to-blue-300 bg-clip-text text-transparent">
-                  Philosophy
-                </span>
-              </motion.h2>
-            </div>
-
-            {/* Vision Statement - Premium Typography */}
-            <motion.div
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              viewport={{ once: true }}
-              transition={{ delay: 0.4, duration: 0.8 }}
-              className="relative max-w-4xl mx-auto"
-            >
-              {/* Quote Decoration */}
-              <div className="absolute -top-6 -left-4 lg:-left-8 text-6xl lg:text-8xl text-white/10 font-serif">"</div>
-              
-              <p className="relative text-2xl lg:text-4xl text-slate-100 leading-relaxed font-light tracking-wide px-8">
-                Empowering innovation in payments through{" "}
-                <span className="font-semibold text-white relative inline-block">
-                  secure, inclusive, and intelligent technology
-                  <span className="absolute bottom-1 left-0 w-full h-1 bg-blue-400/30"></span>
-                </span>{" "}
-                that transforms how businesses and consumers interact in the digital economy.
-              </p>
-
-              <div className="absolute -bottom-6 -right-4 lg:-right-8 text-6xl lg:text-8xl text-white/10 font-serif">"</div>
-            </motion.div>
-
-            {/* Key Values/Principles */}
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: 0.6, duration: 0.8 }}
-              className="grid md:grid-cols-3 gap-8 pt-12"
-            >
-              {[
-                { title: "Innovation", icon: "💡", desc: "Pioneering next-gen payment solutions" },
-                { title: "Security", icon: "🔒", desc: "Uncompromising data protection" },
-                { title: "Inclusion", icon: "🌐", desc: "Financial access for all" }
-              ].map((value, index) => (
-                <motion.div
-                  key={index}
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: 0.7 + index * 0.1 }}
-                  whileHover={{ y: -6, scale: 1.03 }}
-                  className="group relative"
-                >
-                  <div className="relative bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8 hover:bg-white/10 transition-all duration-300">
-                    {/* Icon */}
-                    <div className="text-5xl mb-4 group-hover:scale-110 transition-transform duration-300">
-                      {value.icon}
-                    </div>
-                    
-                    {/* Title */}
-                    <h3 className="text-2xl font-bold text-white mb-3">
-                      {value.title}
-                    </h3>
-                    
-                    {/* Description */}
-                    <p className="text-slate-300 font-light">
-                      {value.desc}
-                    </p>
-
-                    {/* Hover Glow Effect */}
-                    <div className="absolute inset-0 rounded-2xl bg-linear-to-br from-blue-400/0 to-slate-400/0 group-hover:from-blue-400/10 group-hover:to-slate-400/10 transition-all duration-300"></div>
-                  </div>
-                </motion.div>
-              ))}
-            </motion.div>
-
-            {/* Bottom Decorative Element */}
-            <motion.div
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              viewport={{ once: true }}
-              transition={{ delay: 0.9 }}
-              className="pt-8"
-            >
-              <div className="inline-flex items-center gap-3 px-6 py-3 bg-white/5 backdrop-blur-sm border border-white/10 rounded-full">
-                <div className="w-2 h-2 bg-emerald-400 rounded-full animate-pulse"></div>
-                <span className="text-slate-300 font-semibold text-sm tracking-wide">
-                  Shaping the Future of Fintech
-                </span>
-              </div>
-            </motion.div>
-          </motion.div>
+                <h3 className="text-2xl font-bold text-white mb-4">
+                  {value.title}
+                </h3>
+                <p className="text-white/80 leading-relaxed">
+                  {value.desc}
+                </p>
+              </motion.div>
+            ))}
+          </div>
         </div>
       </section>
     </AnimatedSection>

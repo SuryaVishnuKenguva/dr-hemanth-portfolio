@@ -8,7 +8,7 @@ export const education = [
     status: "Pursuing",
     description:
       "Research in Leadership, Artificial Intelligence, and Management Innovation. Activities: AI & ML, Leadership Skills.",
-    color: "from-emerald-500 to-emerald-600",
+    color: "from-[#1FA971] to-[#178B5C]",
     highlight: true,
   },
   {
@@ -18,7 +18,7 @@ export const education = [
     status: "Completed",
     description:
       "Specializing in Corporate Law, Business Governance, and Compliance Frameworks.",
-    color: "from-indigo-500 to-indigo-600",
+    color: "from-[#0F2A44] to-[#0F2A44]",
   },
   {
     degree: "Doctor of Philosophy (Ph.D.) – Management",
@@ -28,7 +28,7 @@ export const education = [
     status: "Completed",
     description:
       "Ph.D. focused on Management and Organizational Strategy within modern business ecosystems.",
-    color: "from-blue-500 to-blue-600",
+    color: "from-[#0F2A44] to-[#0F2A44]",
   },
   {
     degree: "Executive Program – Leadership & Change Management",
@@ -37,7 +37,7 @@ export const education = [
     status: "Completed",
     description:
       "Learned advanced strategies in Leadership, Transformation, and Change Management.",
-    color: "from-slate-700 to-slate-800",
+    color: "from-[#1FA971] to-[#178B5C]",
   },
   {
     degree: "Entrepreneurship in Emerging Economies",
@@ -46,7 +46,7 @@ export const education = [
     status: "Completed",
     description:
       "Certification in entrepreneurship, innovation, and emerging market dynamics.",
-    color: "from-rose-500 to-rose-600",
+    color: "from-[#0F2A44] to-[#0F2A44]",
   },
   {
     degree: "Master of Business Administration (MBA) – Marketing & Finance",
@@ -55,16 +55,16 @@ export const education = [
     status: "Completed",
     description:
       "Focused on Marketing, Finance, and Business Strategy. Earned Grade B+.",
-    color: "from-blue-500 to-blue-600",
+    color: "from-[#0F2A44] to-[#0F2A44]",
   },
   {
-    degree: "Bachelor’s Degree – Accounting & Computer Science",
+    degree: "Bachelor's Degree – Accounting & Computer Science",
     institution: "Andhra University, Visakhapatnam",
     duration: "1999 – 2002",
     status: "Completed",
     description:
       "Graduated with strong fundamentals in Corporate Accounting and Computer Science.",
-    color: "from-slate-600 to-slate-700",
+    color: "from-[#4A6FA5] to-[#4A6FA5]",
   },
   {
     degree: "Secondary Education",
@@ -73,6 +73,6 @@ export const education = [
     status: "Completed",
     description:
       "Achieved academic excellence with early leadership involvement.",
-    color: "from-gray-400 to-gray-500",
+    color: "from-[#4A6FA5] to-[#4A6FA5]",
   },
 ];

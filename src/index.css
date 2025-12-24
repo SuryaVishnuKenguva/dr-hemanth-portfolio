@@ -1,1 +1,54 @@
 @import "tailwindcss";
+
+:root {
+  --brand-primary: #0F2A44;
+  --brand-secondary: #4A6FA5;
+  --accent-yellow: #F4C430;
+  --accent-yellow-hover: #E0B020;
+  --bg-white: #FFFFFF;
+  --bg-light-yellow: #FFF8E1;
+  --bg-section: #F5F7FA;
+  --text-body: #2E2E2E;
+}
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  color: var(--text-body);
+  background: var(--bg-white);
+  line-height: 1.6;
+  letter-spacing: -0.01em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+}
+
+.editorial-divider {
+  width: 48px;
+  height: 2px;
+  background: var(--brand-primary);
+}
+
+.section-label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
